@@ -1,5 +1,12 @@
 # Historique
 
+## 1.0.0-beta.2 — 8 novembre 2026
+
+- Présentation explicite des **10 défis** déjà inclus dans le code installé : huit historiques, Martyr et Survival.
+- Liens directs vers le ZIP complet et le ZIP de l'addon dans le README et la release.
+- Crédit de **BlaMacfly** comme créateur et mainteneur, dans le README et le fichier AUTHORS inclus au pack.
+- Code serveur et addon identiques à la version précédente.
+
 ## 1.0.0-beta.1 — 8 novembre 2026
 
 Première publication indépendante de la version installée sur Sylvania R1.

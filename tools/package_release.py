@@ -6,7 +6,7 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 ADDON = ROOT / "modules/mod-survival/addon/SylvaniaSurvival"
-ROOT_FILES = ["README.md", "LICENSE", "LICENSE-AGPL3", "NOTICE.md", "CHANGELOG.md", "VERSION"]
+ROOT_FILES = ["README.md", "LICENSE", "LICENSE-AGPL3", "NOTICE.md", "AUTHORS.md", "CHANGELOG.md", "VERSION"]
 
 
 def add(archive, source, name):
