@@ -1,0 +1,13 @@
+* text=auto eol=lf
+*.cpp text eol=lf
+*.h text eol=lf
+*.lua text eol=lf
+*.sh text eol=lf
+*.py text eol=lf
+*.sql text eol=lf
+*.yml text eol=lf
+*.md text eol=lf
+*.conf.dist text eol=lf
+*.example text eol=lf
+*.png binary
+*.tga binary

@@ -1,0 +1,31 @@
+{
+  "snapshot_date": "2026-11-08",
+  "source": "Installed Sylvania R1 module sources",
+  "azerothcore_revision": "1aea86e8932da61ba500f20f7267fcd4861cd0f5",
+  "upstream_repository": "https://github.com/ZhengPeiRu21/mod-challenge-modes",
+  "upstream_reference_at_import": "1930525b9530d329cb9fe0504a3c9b5b40a12261",
+  "note": "The upstream reference is attribution context, not a claim that the installed fork was based on that exact commit. Runtime sources and distributed defaults are byte-identical to the exported server files. Documentation and installation helpers are adapted for this repository.",
+  "installed_file_sha256": {
+    "modules/mod-challenge-modes/conf/conf.sh.dist": "03a067266778b360f3732db5aa1f4d09e58a3ec7e9cfe63d50dddf9335889df0",
+    "modules/mod-challenge-modes/conf/challenge_modes.conf.dist": "b1a8c80d2a916bac4a3066fff366820432afaadb6682c77624d9eb0a5406fb66",
+    "modules/mod-challenge-modes/src/ChallengeModes_loader.cpp": "ffd8e8835f9821ed84b7b64d008ba83a766d87ee5594b83307e09437a0a74fa6",
+    "modules/mod-challenge-modes/src/ChallengeModes.cpp": "fb008b5bd0dd86c49921f41bc2780ab35f8c9015d6bee8addfcc399263453863",
+    "modules/mod-challenge-modes/src/ChallengeModes.h": "5081ca1df2b8a24867f1146ca24cedc08f019ded0fdd2ac0a7565edfde0189af",
+    "modules/mod-challenge-modes/data/sql/db-characters/updates/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "modules/mod-challenge-modes/data/sql/db-auth/updates/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "modules/mod-challenge-modes/data/sql/db-world/updates/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "modules/mod-challenge-modes/data/sql/db-world/base/challenge_mode_gobject.sql": "0c042e31b05762a40689f9d4543fa0a540795549ccda261b1631390b9ce18a8f",
+    "modules/mod-survival/conf/mod_survival.conf.dist": "88854880f60ad1ecb31b9aa564d8252c584234211f1b3d7185a6817316cca119",
+    "modules/mod-survival/sql/world/2026_11_07_00_survival_hunger.sql": "6e490fda6e0df2be388cafd0d8925f69974d290da4e31d0d76f088db54c659fd",
+    "modules/mod-survival/src/Survival.h": "5519e61fb7dd1e028cde3576e18eb192d36e2bf2962c19f3776ae1bac3052870",
+    "modules/mod-survival/src/survival_loader.cpp": "f6be760fb922a973acfeead6e192c3cce4c8d72b6bb8f9a1f450f868cf74360f",
+    "modules/mod-survival/src/Survival.cpp": "44fd3859f78a7d18422c95be1c71fd21d8ec2f6d24863eb934cc0f3aa8de8522",
+    "modules/mod-survival/src/SurvivalModel.h": "173a7782c2f6e65690019b4254acde11997db093766535f8e36428b3a321d6fe",
+    "modules/mod-survival/addon/SylvaniaSurvival/SylvaniaSurvival.lua": "8ab6aea5d2dac00b85b88fc9b33c84b971b1369c03918e3ab554b4a9980b47d1",
+    "modules/mod-survival/addon/SylvaniaSurvival/SylvaniaSurvival.toc": "18227db84e26aa7c73ca4db7966de6daf3cd9bef885b2c602bdbfb7c6dd8ed81",
+    "modules/mod-survival/addon/SylvaniaSurvival/README.txt": "62fddd0e1b3278a87cdd9159af99fd6d18b6b4c3c0ae8e74ff288171b39a5096",
+    "modules/mod-survival/addon/SylvaniaSurvival/Textures/Cold.tga": "9400b84d7d2a4f1cc4f3a3688c4b445d00699871a51fc368a881cfcd8c3d08ba",
+    "modules/mod-survival/addon/SylvaniaSurvival/Textures/Food.tga": "62a81010a3963fead985068a7c0b690c4089aff38bb2985470ecc814c9f019de",
+    "modules/mod-survival/addon/SylvaniaSurvival/Textures/Water.tga": "69b31efde9bd0b18e84534e22d9b47738a2a7da57115a920ca0811514cdc6bd0"
+  }
+}

@@ -1,0 +1,50 @@
+--- a/modules/mod-challenge-modes/src/ChallengeModes.cpp
++++ b/modules/mod-challenge-modes/src/ChallengeModes.cpp
+@@ -3,6 +3,7 @@
+  */
+ 
+ #include "ChallengeModes.h"
++#include "Survival.h"
+ #include "World.h"
+ #include "WorldSessionMgr.h"
+ #include "Player.h"
+@@ -266,7 +267,7 @@
+             if (sChallengeModes->challengeEnabledForPlayer(static_cast<ChallengeModeSettings>(setting), player))
+                 return true;
+         }
+-        return IsMartyrChallengeActive(player);
++        return SylvaniaSurvival::IsParticipant(player) || IsMartyrChallengeActive(player);
+     }
+ 
+     Channel* GetChallengeChannel(Player* player)
+@@ -309,6 +310,7 @@
+             case SETTING_QUEST_XP_ONLY:      return "XP de Quêtes Uniquement";
+             case SETTING_IRON_MAN:           return "Iron Man";
+             case 100:                        return "Martyr";
++            case SylvaniaSurvival::ActivationAction: return "Survival";
+             default:                         return "Défi";
+         }
+     }
+@@ -1115,12 +1117,20 @@
+                 AddGossipItemFor(player, GOSSIP_ICON_CHAT, "|cFF800080Activer le Mode Martyr (Perte XP sur mort)|r", 0, 100, "Êtes-vous sûr de vouloir activer ce mode de défi ?\n\nCe choix est DÉFINITIF et ne pourra pas être annulé.", 0, false);
+             }
+         }
++        SylvaniaSurvival::AddAltarOption(player);
+         SendGossipMenuFor(player, 12669, go->GetGUID());
+         return true;
+     }
+ 
+-    bool OnGossipSelect(Player* player, GameObject* /*go*/, uint32 /*sender*/, uint32 action) override
+-    {
++    bool OnGossipSelect(Player* player, GameObject* go, uint32 /*sender*/, uint32 action) override
++    {
++        if (action == SylvaniaSurvival::ActivationAction)
++        {
++            if (SylvaniaSurvival::ActivateAtAltar(player, go))
++                AnnounceChallengeActivation(player, action);
++            CloseGossipMenuFor(player);
++            return true;
++        }
+         // Action 100 = activation Mode Martyr (porté du Lua, hors framework PlayerSetting).
+         if (action == 100)
+         {

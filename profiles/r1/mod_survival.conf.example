@@ -1,0 +1,30 @@
+[worldserver]
+
+# Opt-in challenge. Default off, additionally locked to the configured realm.
+Survival.Enabled = 1
+Survival.RealmID = 1
+Survival.AltarEntry = 254605
+Survival.StopLevel = 80
+Survival.PauseAFK = 0
+
+# Startup confirmation for this module only.
+Logger.module.survival = 3,Console Server
+
+# Seconds from full to empty while online. A full meal/drink takes 30 seconds.
+Survival.FoodSeconds = 5400
+Survival.WaterSeconds = 3600
+Survival.MealSeconds = 30
+
+# Cold builds outdoors in these zones. Swimming doubles exposure.
+# Dun Morogh, Dragonblight, Storm Peaks, Icecrown, Winterspring.
+Survival.ColdZones = "1,65,67,210,618"
+Survival.ColdSeconds = 600
+Survival.WarmSeconds = 120
+
+# Heat doubles water consumption outdoors; no global weather changes.
+# Badlands, Burning Steppes, Searing Gorge, Tanaris, Hellfire Peninsula.
+Survival.HotZones = "3,46,51,440,3483"
+
+# Cooking fires (spell focus 4) are recognized automatically.
+# Additional safe fires, including the player-created campfire: eight yards, same phase, line of sight.
+Survival.CampfireEntries = "2061"

@@ -1,0 +1,7 @@
+## Interface: 30300
+## Title: Sylvania Survival
+## Notes: Hunger, hydration and cold for the opt-in Sylvania Survival challenge.
+## Author: Sylvania
+## Version: 0.2.0
+## SavedVariablesPerCharacter: SylvaniaSurvivalDB
+SylvaniaSurvival.lua

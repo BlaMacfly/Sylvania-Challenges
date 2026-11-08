@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "core_revision": "1aea86e89",
+  "behavior_checks": 63,
+  "addon_client_build": "3.3.5a / 12340",
+  "binary_sha256": "09f819f684537f82ee379c57230b1e5b793160a472d5b5e70a8088c56a68c939",
+  "server_ready": true,
+  "website_published": false,
+  "requires_player_validation": [
+    "rendu du panneau en jeu",
+    "faim : cinq caractéristiques à -50 %, y compris après changement de buff ou équipement",
+    "retrait des malus après consommation",
+    "comparaison avec un personnage sans Survival"
+  ]
+}

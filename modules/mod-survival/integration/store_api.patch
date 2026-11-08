@@ -1,0 +1,17 @@
+--- a/store_api.php
++++ b/store_api.php
+@@ -283,6 +283,14 @@
+         }
+     }
+ 
++    // Survival garde son état séparément des modes historiques : seul le statut 1 est actif.
++    $stmt = $charDb->prepare("SELECT data FROM character_settings WHERE guid = ? AND source = 'mod-survival'");
++    $stmt->execute([$guid]);
++    $survival = $stmt->fetch(PDO::FETCH_ASSOC);
++    if ($survival && intval(explode(' ', trim($survival['data']))[0] ?? 0) === 1) {
++        return true;
++    }
++
+     // 2. Vérifier character_hardcore
+     try {
+         $stmt = $charDb->prepare("SELECT is_hardcore FROM character_hardcore WHERE guid = ?");
